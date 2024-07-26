@@ -11,28 +11,32 @@ Install nfs packages
 ```bash
   yum Install nfs-utils -y
 ```
+Restart nfs serice
 
+```bash
+systemctl start nfs
+```
 Add user with username
 
 ```bash
-  useradd (remoteuser)
+  useradd remoteuser
 ```
 Give password to useradd
 
 ```bash
-passwd (remoteuser)
+passwd remoteuser
 ```
 Put entry inside the /etc/exports file
 
 ```bash
 vim /etc/exports
 
-/home/username  ip address(rw,sync)
+/home/username  *(rw,sync)
 ```
 Execute command 
 
 ```bash
-esportfs -r
+exportfs -r
 ```
 ## Client Side Configuration
 

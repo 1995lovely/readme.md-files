@@ -93,7 +93,9 @@ After the autofs configuration when you switch user command you can see:
 
 ## Important note
 
-Now we can geting remoteuser home directory from the server Side,because we deleted user home directory from client side.This is called autofs service and on demand mount.
+Now we can geting remoteuser home directory from the server Side,because we deleted user home directory from client side.This is called autofs service and on demand mount.Always remember selinux will stop as well as firewalld.service will also stop.
+setenforce 0 (To stop selinux)
+systemctl stop firewalld.service (To stop firewalld service)
 
 
 ## Authors

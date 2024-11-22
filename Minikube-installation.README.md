@@ -3,12 +3,14 @@
 ## Set up the repository
 
 ```bash
-   curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-arm64```
+   curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-arm64
+```
 
 ## Install Minikube
 
 ```bash
-  sudo install minikube-linux-arm64 /usr/local/bin/minikube && rm minikube-linux-arm64```
+  sudo install minikube-linux-arm64 /usr/local/bin/minikube && rm minikube-linux-arm64
+```
 
 ## Run command
 
